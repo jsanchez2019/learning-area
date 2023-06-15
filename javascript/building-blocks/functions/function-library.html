@@ -39,6 +39,11 @@
       return num;
     }
 
+    function circumferenceOfCircle(num) {
+      return num = 2 * 3.14 * num;
+    }
+
+
     input.addEventListener("change", () => {
       const num = parseFloat(input.value);
       if(isNaN(num)) {
@@ -47,8 +52,10 @@
         para.textContent = `${num} squared is ${squared(num)}. `;
         para.textContent += `${num} cubed is ${cubed(num)}. `;
         para.textContent += `${num} factorial is ${factorial(num)}. `;
+        para.textContent += `The radius of a circle with ${num} ft is ${circumferenceOfCircle(num)}. `;
       }
     });
+
   </script>
 </body>
 </html>
